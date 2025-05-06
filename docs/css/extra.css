@@ -1,29 +1,57 @@
-[data-md-color-scheme="ctrl"] {
-    --md-primary-fg-color:        #000000;
-    --md-primary-fg-color--yellow: #E1FF04;
-    --md-primary-fg-color--pink:  #FF28C3;
-    --md-primary-fg-color--lightgray:  #F3F3F3;
-  }
-.md-header{
-    color:#E1FF04
+@font-face {
+    font-family: FivoHeavy;
+    src: url("../resources/FivoSansModern-Heavy.otf") format("opentype");
 }
-.md-tabs{
-    color:#E1FF04;
+
+@font-face {
+    font-family: FivoMedium;
+    src: url("../resources/FivoSansModern-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SFPro;
+    src: url("../resources/SF-Pro-Display-Regular.otf") format("opentype");
+}
+
+[data-md-color-scheme="ctrl"] {
+    --md-primary-fg-color: #000000;
+    --md-primary-fg-color--yellow: #E1FF04;
+    --md-primary-fg-color--pink: #FF28C3;
+    --md-primary-fg-color--lightgray: #f3f3f3;
+}
+
+.md-header {
+    background-color: black;
+    color: black
+}
+
+.md-tabs {
+    background-color: black;
+    color: #E1FF04;
     font-weight: bold;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Abril Fatface';
+h1 {
+    font-family: FivoHeavy;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: FivoMedium;
 }
 
 
 body {
-    font-family: 'Roboto Mono', monospace; 
+    font-family: SFPro;
+    background-color: #f3f3f3;
 }
 
 
 
-.md-grid{
+.md-grid {
     max-width: 100rem;
 }
 
@@ -36,5 +64,5 @@ body {
 
 .md-header__topic {
     display: none;
-    
+
 }
