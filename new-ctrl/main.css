@@ -1,0 +1,166 @@
+@font-face {
+    font-family: FivoHeavy;
+    src: url("resources/FivoSansModern-Heavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FivoMedium;
+    src: url("resources/FivoSansModern-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SFPro;
+    src: url("resources/SF-Pro-Display-Regular.otf") format("opentype");
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #001200;
+}
+
+header {
+    width: 85%;
+    padding: 30px 0;
+}
+
+main {
+    min-height: 85vh;
+    width: 100%;
+    padding: 50px 20px;
+    margin: 0 50px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "FivoHeavy";
+    font-size: 42pt;
+}
+
+h2 {
+    font-family: FivoMedium;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+
+p {
+    font-family: SFPro;
+    font-size: 14pt;
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 20px;
+    font-family: FivoMedium;
+}
+
+nav img {
+    height: 40px;
+}
+
+.active {
+    color: #e1ff04;
+}
+
+nav a:hover {
+    color: #e1ff04;
+}
+
+.main_img {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 500px;
+}
+
+.main_img h1 {
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-size: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #ff28c3;
+}
+
+.main_img img {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 40px;
+}
+
+
+.text {
+    text-align: center;
+    width: 70%;
+    padding-bottom: 50px;
+}
+
+
+.questions {
+    width: 70%;
+    padding: 20px 0;
+}
+
+.questions h2 {
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+.questions span {
+    line-height: 1.8;
+    font-family: FivoMedium;
+    color: #ff28c3;
+}
+
+q {
+    font-family: FivoMedium;
+    font-size: 25pt;
+    background-color: #e1ff04;
+}
+
+.sammarbete {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.sammarbete img {
+    width: 250px;
+}
