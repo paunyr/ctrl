@@ -1,0 +1,44 @@
+site_name: .
+theme:
+  font:
+    text: Abril Fatface
+    
+  name: material
+  logo: resources/logos/ctrl_logo_yellow.png
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.hide_sidebar
+    - navigation.prune
+    - navigation.hide_navbar  
+    - content.tabs.link
+
+hide:
+  - navigation
+  - toc
+
+extra_css:
+  - css/extra.css
+
+markdown_extensions: 
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+copyright: Copyright &copy; 2025 - Sentor MSS AB
+
+nav:
+  - Vad är digitalt våld?: index.md
+  - Vad kan jag som vuxen göra?: 'Vad kan jag som vuxen göra?'
+  - Om Ctrl: 'Om Ctrl.md'
+  - Kunskapsbank: 
+    - 10 varningssignaler på digitalt våld: blogg/10 varningssignaler på digitalt våld.md
+    - Bemötande: blogg/Bemötande.md
+    - Digitala fotspår: blogg/Digitala fotspår.md
+    - Så hanterar du oönskad kontakt: blogg/Så hanterar du oönskad kontakt.md
+    - Vad kan vara brottsligt på nätet?: blogg/Vad kan vara brottsligt på nätet.md
+    - Vanliga former av digitalt våld: blogg/Vanliga former av digitalt våld.md

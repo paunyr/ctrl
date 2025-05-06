@@ -1,0 +1,40 @@
+[data-md-color-scheme="ctrl"] {
+    --md-primary-fg-color:        #000000;
+    --md-primary-fg-color--yellow: #E1FF04;
+    --md-primary-fg-color--pink:  #FF28C3;
+    --md-primary-fg-color--lightgray:  #F3F3F3;
+  }
+.md-header{
+    color:#E1FF04
+}
+.md-tabs{
+    color:#E1FF04;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface';
+}
+
+
+body {
+    font-family: 'Roboto Mono', monospace; 
+}
+
+
+
+.md-grid{
+    max-width: 100rem;
+}
+
+
+
+.md-content {
+    max-width: 35rem;
+    margin: auto;
+}
+
+.md-header__topic {
+    display: none;
+    
+}
