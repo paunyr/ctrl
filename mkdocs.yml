@@ -1,5 +1,7 @@
-site_name: .
+site_name: Ctrl
 theme:
+  palette:
+    primary: black
   font:
     text: Abril Fatface
     
