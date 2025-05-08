@@ -626,3 +626,16 @@ footer {
 .delay-3 {
     animation-delay: 0.6s;
 }
+
+.footer-partners img{
+    min-width: 100px;
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-partners{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
