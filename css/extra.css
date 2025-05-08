@@ -27,7 +27,7 @@
 
 .md-tabs__link {
     color: #E1FF04;
-    font-size: 13pt;
+    font-size: 14pt;
     font-family: FivoMedium;
 }
 
@@ -47,26 +47,73 @@ h6 {
     font-family: FivoMedium;
 }
 
+h3,
+ul {
+    width: 90%;
+}
+
 
 body {
     font-family: SFPro;
     background-color: #f3f3f3;
 }
 
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.main_img {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 500px;
+}
+
+.main_img h1 {
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-size: 36px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #E1FF04;
+}
+
+.main_img img {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 40px;
+}
 
 .md-grid {
     max-width: 100rem;
 }
 
 .md-content {
-    max-width: 35rem;
+    max-width: 45rem;
     margin: auto;
 }
 
 .md-header__topic {
     display: none;
 
+}
+
+.md-nav__list {
+    font-size: 12pt;
 }
 
 .md-nav__link--active {
@@ -85,4 +132,46 @@ body {
 
 .md-nav__link:hover {
     color: #000000;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 50px;
+}
+
+.sammarbete {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sammarbete img {
+    width: 250px;
+}
+
+.quote {
+    align-self: flex-start;
+    width: 100%;
+}
+
+.quote summary,
+.quote p {
+    font-size: 12pt;
+}
+
+#__nav_4_label {
+    background-color: #FF28C3;
+    font-size: 15pt;
+    padding: 5px;
+    color: white;
+    font-family: FivoMedium;
+    font-weight: bolder;
+}
+
+.md-header__button md-icon svg {
+    color: white;
+}
+
+#mini-logo {
+    height: 30px;
 }
