@@ -11,30 +11,6 @@ hide:
     </div>
 </div>
 
-
-<!--
-<div style="
-        background-image: url('../resources/images/ctrl-image-4.jpg'); /* Replace with your hero image URL */
-        background-size: cover; /* Cover the entire div */
-        background-position: center; /* Center the image */
-        height: 400px; /* Set the height of the hero section */
-        display: flex; /* Use flexbox for centering content */
-        align-items: center; /* Center content vertically */
-        justify-content: center; /* Center content horizontally */
-        color: white; /* Text color */
-        text-align: center; /* Center text */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Black shadow effect */
-
-        ">
-        <h1 style="color:#FF28C3">
-        Vad kan jag som vuxen göra?
-        </h1>
-</div>
-
--->
-
-
-
 Att som vuxen navigera i både ungas sociala liv och den digitala världen kan vara en utmaning. Särskilt svårt kan det vara att förstå de olika plattformar som barn och unga använder – och hur dessa är tätt sammankopplade med deras sätt att umgås, skapa relationer och uttrycka sig.
 
 Samtidigt efterfrågar unga att deras föräldrar och andra vuxna i deras närhet har större insikt i och förståelse för digitalt våld. Därför är det viktigt att du som vuxen tar dig tid att lära dig mer om de plattformar unga använder, hur de fungerar och hur de påverkar deras vardag.

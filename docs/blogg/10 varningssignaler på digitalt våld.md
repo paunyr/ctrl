@@ -10,28 +10,6 @@ hide:
     </div>
 </div>
 
-
-<!--
-<div style="
-        background-image: url('../../resources/images/ctrl-image-7.png'); /* Replace with your hero image URL */
-        background-size: cover; /* Cover the entire div */
-        background-position: center; /* Center the image */
-        height: 400px; /* Set the height of the hero section */
-        display: flex; /* Use flexbox for centering content */
-        align-items: center; /* Center content vertically */
-        justify-content: center; /* Center content horizontally */
-        color: white; /* Text color */
-        text-align: center; /* Center text */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Black shadow effect */
-        ">
-        <h1 style="color:#FF28C3">
-            10 varningssignaler på digitalt våld
-        </h1>
-</div>
-
--->
-
-
 <!-- # 10 varningssignaler på digitalt våld -->
 
 Det finns många olika sätt att utöva våld eller skada en annan person. Alla reagerar också olika när de blir utsatta för våld, och det finns inget rätt eller ”normalt” sätt att känna eller reagera på.
