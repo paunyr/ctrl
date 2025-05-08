@@ -4,6 +4,15 @@ hide:
   - toc
 ---
 
+<div class="container">
+    <div class="main_img">
+        <h1>Vad kan jag som vuxen göra?</h1>
+        <img src="../resources/images/ctrl-image-8.jpg" alt="imgage" />
+    </div>
+</div>
+
+
+<!--
 <div style="
         background-image: url('../resources/images/ctrl-image-4.jpg'); /* Replace with your hero image URL */
         background-size: cover; /* Cover the entire div */
@@ -22,7 +31,7 @@ hide:
         </h1>
 </div>
 
-
+-->
 
 
 

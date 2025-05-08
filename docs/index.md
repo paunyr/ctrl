@@ -6,7 +6,15 @@ hide:
 
 ---
 
+<div class="container">
+    <div class="main_img">
+        <h1>Vad är digitalt våld?</h1>
+        <img src="./resources/images/ctrl-image-1.jpg" alt="imgage" />
+    </div>
+</div>
 
+
+<!--
 <div style="
         background-image: url('./resources/images/ctrl-image-1.jpg'); /* Replace with your hero image URL */
         background-size: cover; /* Cover the entire div */
@@ -24,7 +32,7 @@ hide:
         </h1>
 </div>
 
-
+-->
 
 Digitalt våld är när någon använder digital teknik – som mobilen, appar eller sociala medier – för att kontrollera, hota eller skada dig. Det kan ta sig olika uttryck och vara en form av psykiskt, sexuellt eller ekonomiskt våld.
 

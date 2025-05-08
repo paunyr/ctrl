@@ -2,6 +2,15 @@
 hide:
   - toc
 ---
+
+<div class="container">
+    <div class="main_img">
+        <h1>Bemötande</h1>
+        <img src="../../resources/images/ctrl-image-2.jpg" alt="imgage" />
+    </div>
+</div>
+
+<!--
 <div style="
         background-image: url('../../resources/images/ctrl-image-6.jpg'); /* Replace with your hero image URL */
         background-size: cover; /* Cover the entire div */
@@ -19,7 +28,7 @@ hide:
         </h1>
 </div>
 
-
+-->
 
 Det är jobbigt att se sin vän bli utsatt för våld eller vara i en osund relation. Och det kan vara svårt och veta hur man ska agera. Då är det viktigt att komma ihåg att lita på magkänslan. Märker man att ens kompis inte mår bra i en relation är det bättre att göra någonting istället för ingenting. Att du uppmärksammar din oro till din vän kan göra stor skillnad. Några konkreta saker man kan göra är att:
 

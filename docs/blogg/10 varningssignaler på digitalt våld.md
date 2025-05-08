@@ -3,6 +3,15 @@ hide:
   - toc
 ---
 
+<div class="container">
+    <div class="main_img">
+        <h1>10 varningssignaler på digitalt våld</h1>
+        <img src="../../resources/images/ctrl-image-10.jpg" alt="imgage" />
+    </div>
+</div>
+
+
+<!--
 <div style="
         background-image: url('../../resources/images/ctrl-image-7.png'); /* Replace with your hero image URL */
         background-size: cover; /* Cover the entire div */
@@ -19,6 +28,8 @@ hide:
             10 varningssignaler på digitalt våld
         </h1>
 </div>
+
+-->
 
 
 <!-- # 10 varningssignaler på digitalt våld -->
