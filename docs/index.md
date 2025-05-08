@@ -6,25 +6,12 @@ hide:
 
 ---
 
-
-<div style="
-        background-image: url('/resources/images/ctrl-image-1.jpg'); /* Replace with your hero image URL */
-        background-size: cover; /* Cover the entire div */
-        background-position: center; /* Center the image */
-        height: 400px; /* Set the height of the hero section */
-        display: flex; /* Use flexbox for centering content */
-        align-items: center; /* Center content vertically */
-        justify-content: center; /* Center content horizontally */
-        color: white; /* Text color */
-        text-align: center; /* Center text */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Black shadow effect */
-        ">
-        <h1 style="color:#FF28C3">
-            Vad är digitalt våld
-        </h1>
+<div class="container">
+    <div class="main_img">
+        <h1>Vad är digitalt våld?</h1>
+        <img src="./resources/images/ctrl-image-1.jpg" alt="imgage" />
+    </div>
 </div>
-
-
 
 Digitalt våld är när någon använder digital teknik – som mobilen, appar eller sociala medier – för att kontrollera, hota eller skada dig. Det kan ta sig olika uttryck och vara en form av psykiskt, sexuellt eller ekonomiskt våld.
 

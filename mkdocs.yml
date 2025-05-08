@@ -6,7 +6,7 @@ theme:
     text: Abril Fatface
     
   name: material
-  logo: resources/logos/ctrl_logo_yellow.png
+  logo: ./resources/logos/ctrl_logo_yellow.png
   features:
     - navigation.tabs
     - navigation.top
@@ -21,6 +21,9 @@ hide:
 
 extra_css:
   - css/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
 
 markdown_extensions: 
   - attr_list
