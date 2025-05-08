@@ -4,7 +4,7 @@ hide:
 ---
 
 <div style="
-        background-image: url('/resources/images/ctrl-image-7.png'); /* Replace with your hero image URL */
+        background-image: url('../../resources/images/ctrl-image-7.png'); /* Replace with your hero image URL */
         background-size: cover; /* Cover the entire div */
         background-position: center; /* Center the image */
         height: 400px; /* Set the height of the hero section */

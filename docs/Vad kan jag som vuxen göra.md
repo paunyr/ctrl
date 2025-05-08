@@ -5,7 +5,7 @@ hide:
 ---
 
 <div style="
-        background-image: url('/resources/images/ctrl-image-4.jpg'); /* Replace with your hero image URL */
+        background-image: url('../resources/images/ctrl-image-4.jpg'); /* Replace with your hero image URL */
         background-size: cover; /* Cover the entire div */
         background-position: center; /* Center the image */
         height: 400px; /* Set the height of the hero section */
@@ -35,5 +35,5 @@ Genom att öka din kunskap blir det lättare att upptäcka och förstå vilka ri
 Att stärka din egen kunskap är ett viktigt steg för att skydda ditt barn från att utsättas för våld. I vår folder hittar du konkreta tips och råd – du hittar den här:
 
 
-[![Klicka här för att se PDFen](resources/my_image.png)](resources/CTRL-Folder.pdf)
+[![Klicka här för att se PDFen](../resources/my_image.png)](resources/CTRL-Folder.pdf)
 
