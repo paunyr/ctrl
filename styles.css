@@ -2,11 +2,32 @@
 
 /* Variables */
 :root {
+    /* Light mode (default) */
     --yellow: #E1FF04;
     --black: #000000;
     --white: #F3F3F3;
     --pink: #FF28C3;
     --header-height: 80px;
+    --text-color: var(--black);
+    --bg-color: var(--white);
+    --card-bg: var(--white);
+    --header-bg: var(--black);
+    --header-text: var(--white);
+    --footer-bg: var(--black);
+    --footer-text: var(--white);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+    --text-color: var(--white);
+    --bg-color: #121212;
+    --card-bg: #1E1E1E;
+    --header-bg: #000000;
+    --header-text: var(--white);
+    --footer-bg: #000000;
+    --footer-text: var(--white);
+    --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Base Styles */
@@ -18,8 +39,8 @@
 
 body {
     font-family: 'SF Pro Display', 'Roboto', sans-serif;
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
 
@@ -53,7 +74,7 @@ p {
 }
 
 a {
-    color: var(--black);
+    color: var(--text-color);
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -97,8 +118,8 @@ img {
 
 /* Header */
 header {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--header-bg);
+    color: var(--header-text);
     height: var(--header-height);
     position: fixed;
     top: 0;
@@ -131,7 +152,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--white);
+    color: var(--header-text);
     font-weight: 500;
     position: relative;
 }
@@ -152,6 +173,31 @@ nav ul li a.active::after {
     width: 100%;
     height: 2px;
     background-color: var(--yellow);
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--header-text);
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--yellow);
+    transform: scale(1.1);
+}
+
+.theme-toggle .fa-sun {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .fa-moon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .fa-sun {
+    display: inline-block;
 }
 
 .menu-toggle {
@@ -207,13 +253,25 @@ main {
 
 /* What Is Section */
 .what-is {
-    padding: 5rem 5%;
-    background-color: var(--white);
+    padding: 2rem 5% 5rem;
+    background-color: var(--bg-color);
+}
+
+.what-is h2 {
+    margin-bottom: 0.25rem;
+}
+
+.what-is .content-wrapper {
+    margin-top: 0;
+}
+
+.what-is .text-content p:first-child {
+    margin-top: 0;
 }
 
 .content-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
 }
 
@@ -223,6 +281,7 @@ main {
 
 .image-content {
     flex: 1;
+    margin-top: -30px; /* Raise the image up */
 }
 
 .image-content img {
@@ -233,8 +292,8 @@ main {
 /* Help Options Section */
 .help-options {
     padding: 5rem 5%;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--header-bg);
+    color: var(--header-text);
 }
 
 .options-grid {
@@ -244,11 +303,11 @@ main {
 }
 
 .option-card {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--card-bg);
+    color: var(--text-color);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px var(--shadow-color);
     transition: transform 0.3s ease;
 }
 
@@ -284,7 +343,7 @@ main {
 /* Blog Preview Section */
 .blog-preview {
     padding: 5rem 5%;
-    background-color: var(--white);
+    background-color: var(--bg-color);
 }
 
 .blog-grid {
@@ -294,10 +353,11 @@ main {
 }
 
 .blog-card {
-    background-color: var(--white);
+    background-color: var(--card-bg);
+    color: var(--text-color);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px var(--shadow-color);
     transition: transform 0.3s ease;
 }
 
@@ -332,8 +392,8 @@ main {
 
 /* Footer */
 footer {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     padding: 3rem 5% 1rem;
 }
 
@@ -393,7 +453,7 @@ footer {
 }
 
 .footer-links ul li a {
-    color: var(--white);
+    color: var(--footer-text);
 }
 
 .footer-links ul li a:hover {
@@ -523,16 +583,17 @@ footer {
 }
 
 .question {
-    background-color: var(--white);
+    background-color: var(--card-bg);
+    color: var(--text-color);
     border-radius: 10px;
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px var(--shadow-color);
 }
 
 .question h3 {
     margin-bottom: 1.5rem;
-    color: var(--black);
+    color: var(--text-color);
 }
 
 .options {
@@ -543,8 +604,8 @@ footer {
 
 .option {
     padding: 1rem 2rem;
-    background-color: var(--white);
-    border: 2px solid var(--black);
+    background-color: var(--card-bg);
+    border: 2px solid var(--text-color);
     border-radius: 4px;
     cursor: pointer;
     font-weight: 700;
@@ -556,7 +617,8 @@ footer {
 }
 
 .answer {
-    background-color: var(--white);
+    background-color: var(--card-bg);
+    color: var(--text-color);
     border-left: 4px solid var(--yellow);
     padding: 1rem;
     margin-top: 1rem;

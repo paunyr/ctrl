@@ -1,6 +1,29 @@
 // CTRL Website JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Theme toggle functionality
+    const themeToggle = document.querySelector('.theme-toggle');
+    const htmlElement = document.documentElement;
+    
+    // Check for saved theme preference or use default
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        htmlElement.setAttribute('data-theme', 'dark');
+    }
+    
+    // Toggle theme on click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            if (htmlElement.getAttribute('data-theme') === 'dark') {
+                htmlElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
+    
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
