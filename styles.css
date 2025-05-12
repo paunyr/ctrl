@@ -342,13 +342,22 @@ main {
     display: inline-block;
 }
 
-.tip-card h1 {
-    color: var(--pink);
-    font-size: 62pt;
+.statistics-card {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 10px -20px 0 var(--pink);
+}
+
+.statistics-card h1 {
+    font-size: 42pt;
+    /*
     text-shadow:
-        4px 4px 3px rgba(226, 255, 4, 1),
-        4px 4px 1px rgba(226, 255, 4, 0.5),
-        0px 0px 3px rgba(226, 255, 4, .2);
+        3px 3px 1px rgba(226, 255, 4, 1),
+        2px 2px 1px rgba(226, 255, 4, 0.5),
+        0px 0px 1px rgba(226, 255, 4, .2);
+*/
 }
 
 /* Blog Preview Section */
