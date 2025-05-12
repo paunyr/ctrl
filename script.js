@@ -1,19 +1,19 @@
-// CTRL Website JavaScript
+// Ctrl Website JavaScript
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Theme toggle functionality
     const themeToggle = document.querySelector('.theme-toggle');
     const htmlElement = document.documentElement;
-    
+
     // Check for saved theme preference or use default
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         htmlElement.setAttribute('data-theme', 'dark');
     }
-    
+
     // Toggle theme on click
     if (themeToggle) {
-        themeToggle.addEventListener('click', function() {
+        themeToggle.addEventListener('click', function () {
             if (htmlElement.getAttribute('data-theme') === 'dark') {
                 htmlElement.removeAttribute('data-theme');
                 localStorage.setItem('theme', 'light');
@@ -23,34 +23,34 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
-    
+
     if (menuToggle && nav) {
-        menuToggle.addEventListener('click', function() {
+        menuToggle.addEventListener('click', function () {
             nav.classList.toggle('active');
         });
     }
-    
+
     // Question/Answer functionality
     const options = document.querySelectorAll('.option');
-    
+
     if (options.length > 0) {
         options.forEach(option => {
-            option.addEventListener('click', function() {
+            option.addEventListener('click', function () {
                 // Get the parent question element
                 const question = this.closest('.question');
-                
+
                 // Get the answer elements
                 const answers = question.querySelectorAll('.answer');
-                
+
                 // Hide all answers first
                 answers.forEach(answer => {
                     answer.classList.remove('show');
                 });
-                
+
                 // Show the corresponding answer
                 const answerType = this.getAttribute('data-answer');
                 if (answerType) {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         targetAnswer.classList.add('show');
                     }
                 }
-                
+
                 // Highlight the selected option
                 const siblingOptions = question.querySelectorAll('.option');
                 siblingOptions.forEach(opt => {
@@ -69,10 +69,10 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-    
+
     // Animate elements when they come into view
     const fadeElements = document.querySelectorAll('.fade-in');
-    
+
     if (fadeElements.length > 0) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, {
             threshold: 0.1
         });
-        
+
         fadeElements.forEach(element => {
             element.style.opacity = 0;
             element.style.transform = 'translateY(20px)';
@@ -93,10 +93,10 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.observe(element);
         });
     }
-    
+
     // Glitch effect for headings with class 'glitch'
     const glitchElements = document.querySelectorAll('.glitch');
-    
+
     if (glitchElements.length > 0) {
         glitchElements.forEach(element => {
             const text = element.textContent;
