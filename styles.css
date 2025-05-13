@@ -378,11 +378,6 @@ main {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px var(--shadow-color);
-    transition: transform 0.3s ease;
-}
-
-.blog-card:hover {
-    transform: translateY(-10px);
 }
 
 .blog-card img {
@@ -393,6 +388,7 @@ main {
 
 .card-img-holder {
     height: 200px;
+    position: relative;
 }
 
 .card-shade {
