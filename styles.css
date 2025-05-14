@@ -599,7 +599,7 @@ footer {
 /* Blog Post Styles */
 .blog-post {
     padding: 5rem 5%;
-    max-width: 75%;
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -688,6 +688,77 @@ footer {
 .partner-logo {
     object-fit: contain;
     height: 200px;
+}
+
+.gaslight {
+    width: fit-content;
+    background-color: #000000;
+    color: #F3F3F3;
+    padding: 50px 40px 80px 40px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.gaslight p {
+    font-size: 14pt;
+}
+
+.gaslight span {
+    font-style: italic;
+    color: #E1FF04;
+}
+
+.stotta {
+    border: 5px solid black;
+    outline: 5px solid var(--pink);
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stotta ul {
+    text-align: left;
+}
+
+.blockquote-wrapper {
+    display: flex;
+    padding: 0 20px;
+}
+
+/* Blockquote main style */
+.blockquote {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding: 30px 0;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+    margin: 40px auto 80px auto;
+    align-self: center;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+/* Blockquote header */
+.blockquote h1 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0;
+}
+
+/* Blockquote right double quotes */
+.blockquote:after {
+    position: absolute;
+    content: "”";
+    font-size: 10rem;
+    line-height: 0;
+    bottom: -43px;
+    right: 30px;
 }
 
 /* Animations */
@@ -788,5 +859,9 @@ footer {
 
     .menu-toggle {
         display: block;
+    }
+
+    .blog-post {
+        max-width: 100%;
     }
 }
