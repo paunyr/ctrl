@@ -206,9 +206,8 @@ nav ul li a.active::after {
     font-size: 1.5rem;
 }
 
-/* Main Content */
 main {
-    padding-top: var(--header-height);
+    padding-top: 15px;
 }
 
 /* Hero Section */
@@ -759,6 +758,22 @@ footer {
     line-height: 0;
     bottom: -43px;
     right: 30px;
+}
+
+.sticky-button {
+    position: sticky;
+    font-size: 14pt;
+    font-weight: bold;
+    color: var(--white);
+    top: 85vh;
+    left: 85vw;
+    padding: 20px 20px;
+    background-color: var(--pink);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    z-index: 5000;
+    box-shadow: 5px -10px 0 var(--yellow);
 }
 
 /* Animations */
